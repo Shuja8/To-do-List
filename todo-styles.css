@@ -1,0 +1,120 @@
+/* General body styling */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+/* Container styling */
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+/* Header styling */
+h1 {
+    color: #f5576c;
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #f5576c;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #f5576c;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #d43d5e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Task list styling */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background: #fff;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+li:hover {
+    transform: translateY(-2px);
+}
+
+li.completed {
+    text-decoration: line-through;
+    background-color: #d4edda;
+}
+
+li button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #dc3545;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+li button:hover {
+    color: #bd2130;
+}
+
+/* Buttons specific styling */
+li button.complete-btn {
+    color: #28a745;
+}
+
+li button.complete-btn:hover {
+    color: #218838;
+}
+
+li button.edit-btn {
+    color: #ffc107;
+}
+
+li button.edit-btn:hover {
+    color: #e0a800;
+}
